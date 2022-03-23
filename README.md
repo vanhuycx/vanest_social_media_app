@@ -20,8 +20,8 @@ Build a full-stack (MERN) social media web application where users can create, u
 
 ### Server (Back-end)
 
-body_parser: send POST request
-cors: cross origin request
-express: framework for routing of the application
-mongoose: model for posts in the app
-nodemon: automatically reset the node server when changes happen.
+- body_parser: send POST request
+- cors: cross origin request
+- express: framework for routing of the application
+- mongoose: model for posts in the app
+- nodemon: automatically reset the node server when changes happen.
