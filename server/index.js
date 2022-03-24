@@ -3,9 +3,13 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import postRoutes from './routes/posts.js';
 
 dotenv.config();
 const app = express();
+
+app.use('/posts',postRoutes)
+
 
 // Set up the express app instance
 // Limit the upload to 30mb and set-up parsing URL-encoded data library
