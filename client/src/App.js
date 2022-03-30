@@ -5,19 +5,15 @@ import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 
 const App = () => {
-
   return (
     <>
       <Container maxWidth='lg'>
         <AppBar className='appBar' position='static' color='inherit'>
-          <Typography variant='h2' align='center'>
-            Vanest
-          </Typography>
           <img
             className='image'
             src={vanestImage}
-            height={200}
-            width={200}
+            height={100}
+            width={100}
             alt=''
           />
         </AppBar>
