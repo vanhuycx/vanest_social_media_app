@@ -1,5 +1,5 @@
 import './App.css';
-import vanestImage from './vanest.png';
+import vanestImage from './images/vanest.png';
 import { Container, AppBar, Typography, Grow, Grid } from '@mui/material';
 
 const App = () => {
@@ -10,8 +10,16 @@ const App = () => {
           {/* <Typography variant='h2' align='center'>
             Vanest
           </Typography> */}
-          <img src={vanestImage} height='400' alt='' />
+          <img src={vanestImage}   alt='' />
         </AppBar>
+        <Grow in>
+          <Container>
+            <Grid container justify='space-between' alignItems='stretch' spacing={3}>
+
+            </Grid>
+
+          </Container>
+        </Grow>
       </Container>
     </>
   );
