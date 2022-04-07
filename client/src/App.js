@@ -3,8 +3,10 @@ import vanestImage from './images/vanest.png';
 import { Container, AppBar, Typography, Grow, Grid } from '@mui/material';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
+import { useDispatch } from 'react-redux';
 
 const App = () => {
+  const dispatch = useDispatch();
   return (
     <>
       <Container maxWidth='lg'>
