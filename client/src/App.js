@@ -1,12 +1,19 @@
 import './App.css';
+import { useEffect } from 'react';
 import vanestImage from './images/vanest.png';
-import { Container, AppBar, Typography, Grow, Grid } from '@mui/material';
+import { Container, AppBar, Grow, Grid } from '@mui/material';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import { useDispatch } from 'react-redux';
+import { getPosts } from './actions/posts';
 
 const App = () => {
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getPosts());
+  }, [dispatch]);
+
   return (
     <>
       <Container maxWidth='lg'>
